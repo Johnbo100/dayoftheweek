@@ -1,12 +1,59 @@
 .App {
   text-align: center;
+  
 }
+/*
 
+rgb(225, 21, 21);
+gold
+dodgerblue;
+*/
+button{
+  background-color: burlywood;
+  border-radius: 3px;
+  padding:5px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.daycontainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.weekdaybtn{
+  width:20vw;
+  padding:40px;
+  margin:10px;
+  border-radius: 10px;
+  background-color: coral;
+  font-size: 30px;
 
+}
+.weekdaybtn:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 15px rgba(74, 192, 68, 0.6);
+  animation: spin 1.5s linear;
+  /*cursor: none;*/
+}
+
+@keyframes spin {
+  from {background-color: rgb(219, 157, 33);}
+  to {background-color: rgb(207, 36, 36);}
+  0%{
+    letter-spacing: 1px;
+
+  }
+  50% {
+    letter-spacing: 8px;
+    box-shadow: 0 1px 15px rgba(197, 6, 73, 1.9);
+  }
+  99%{
+    letter-spacing: 2px;
+    box-shadow: 0 1px 15px rgba(157, 197, 29, 0.6);
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
